@@ -1,0 +1,20 @@
+name: Simple Reusable Workflow
+
+on:
+  workflow_call:
+    inputs:
+      username:
+        required: true
+        type: string
+    secrets:
+      MY_SECRET:
+        required: true
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello, ${{ inputs.username }}!"
+      - name: Show secret
+        run: echo "Secret is ${{ secrets.MY_SECRET }}"

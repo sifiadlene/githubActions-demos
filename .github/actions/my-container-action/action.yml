@@ -1,0 +1,6 @@
+name: "My Container Action"
+description: "A simple custom container GitHub Action."
+author: "yourname@example.com"
+runs:
+  using: "docker"
+  image: "Dockerfile"

@@ -1,0 +1,17 @@
+name: "My JS Action"
+description: "A short description of what the action does"
+author: "Your Name"
+inputs:
+  who:
+    description: "Who to greet"
+    required: true
+    default: "world"
+outputs:
+  greeting:
+    description: "The greeting text"
+runs:
+  using: "node16"
+  main: "src/index.js"
+branding:
+  icon: "heart"
+  color: "blue"
