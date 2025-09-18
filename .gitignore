@@ -1,0 +1,26 @@
+# Build artifacts
+dist/
+build/
+
+# Node modules
+node_modules/
+
+# Cache files
+*.cache
+
+# Docker build cache
+.dockerbuildcache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
